@@ -1,0 +1,1 @@
+Put all libs from hadoop-2.6.0.tar.gz in this folder

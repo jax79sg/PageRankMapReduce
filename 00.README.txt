@@ -1,0 +1,38 @@
+
+RUNNING IN EMR. Please adhere to following.
+- Use EMR 4.0.0 or Amazon 2.6 only. It may not run on higher versions.
+- If you recompile the code, please DO NOT use JRE higher than 1.7.
+- This is tested on m3.xlarge and m3.2xlarge Amazon compute instances
+- Use the following 3 arguments
+Simplified- Args=["s3://emr-cc/emr-input-pagerank","s3://emr-cc/emr-output/simplified/results","s3://emr-cc/emr-output2/simplified/results"]
+Complete- Args=["s3://emr-cc/emr-input-pagerank","s3://emr-cc/emr-output/complete/results","s3://emr-cc/emr-output2/complete/results"]
+
+
+If the full environment is required, the entire Eclipse project can be requested, or be downloaded from below Git link after 4th Jan 2017 (second submission date).
+https://github.com/jax79sg/ccbbk2016_pagerank.git
+
+
+SETTING UP/Recompile
+Supporting libraries
+- https://archive.apache.org/dist/hadoop/common/hadoop-2.6.0/hadoop-2.6.0.tar.gz
+- Java 1.7 (Note: This is the maximum accepted by Amazon 2.6 or EMR 4.0.0)
+- Project was developed in Eclipse Mars
+
+Folders (Under zz_OtherSupportingItems)
+- src (Source codes)
+- bin (compiled classes)
+- hadoop26lib (Contains all the jars found in hadoop-2.6.0.tar.gz)
+- input (Holds the input, sync’ed to EMR with script)
+- localoutput* (For local testing output only)
+- output* (Placeholder to sync results back from EMR)
+- codes (Holds MapReduce.jar to be sync’ed to S3)
+
+Scripts (Under zz_OtherSupportingItems)
+- runemr.sh (Jar the classes, setup/sync S3 folders, submit to EMR for pairs(word))
+- srunemr.sh (Jar the classes, setup/sync S3 folders, Submit to EMR for stripes(word))
+- getemr.sh (Sync results back from S3)
+- runlocal.sh (Jar the classes, setup folders, run the program locally for pairs(word))
+- srunlocal.sh (Jar the classes, setup folders, run the program locally for stripes(word))
+
+
+	

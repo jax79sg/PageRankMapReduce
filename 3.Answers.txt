@@ -1,0 +1,35 @@
+PAGERANK (COMPLETE) 
+20 iterations
+Node	PageRank
+18	0.004535878
+737	0.0031508214
+118	0.00212235
+1719	0.0020787786
+136	0.0019875101
+790	0.001969446
+143	0.0019571972
+40	0.0018250031
+1619	0.0015366253
+725	0.0014959872
+
+#See “B.PageRank/zz_OtherSupportingItems/output2/complete/resultsCOMPLETED/part-r-00000” for sorted output
+#See “B.PageRank/zz_OtherSupportingItems/output2/complete/resultsiteration_19a/*” for raw output (Last iteration)
+
+
+PAGERANK (SIMPLIFIED)
+No convergence due to dangling nodes (12 iterations for the sake of it)
+Node	PageRank
+18	0.003014001
+737	0.0027892473
+40	0.0018304292
+118	0.0017363012
+401	0.0015462874
+725	0.0014986248
+849	0.0014554097
+1719	0.0014269332
+136	0.0014183675
+550	0.0013979819
+
+#See “B.PageRank/zz_OtherSupportingItems/output2/simplified/resultsCOMPLETED/*” for sorted output
+#See “B.PageRank/zz_OtherSupportingItems/output2/simplified/resultsiteration_11a/*” for raw output
+

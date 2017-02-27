@@ -1,0 +1,25 @@
+PAGERANK (COMPLETE)
+20 iterations
+1 Master Node (m3.xlarge), 1 Core Node (m3.2xlarge)
+My Jobs completed in 31 minutes (Under Custom Jar Steps)
+Job 1: 1 Mappers, 5 reducers
+Job 2: 5 Mappers, 5 reducers
+Job 3: 5 Mappers, 5 reducers
+Job 4: 5 Mappers, 1 reducers
+
+PAGERANK (SIMPLIFIED) 
+No convergence during to dangling nodes (Iterate 12 times for the sake of it)
+1 Master Node (m3.xlarge), 1 Core Node (m3.2xlarge)
+My Jobs completed in 10 minutes (Under Custom Jar Steps)
+Job 1: 1 Mappers, 5 reducers
+Job 2: 5 Mappers, 5 reducers
+Job 3: 5 Mappers, 1 reducers
+
+
+TIME TAKEN TO WORK ON PROBLEMS
+- Approximately 40 hours for PageRank assignment
+- Time distribution estimated as follows
+	- 20% - Reading up and understanding problem topic
+	- 20% - Experimenting Hadoop coding on Java
+	- 50% - Implement solution locally (Include testing and debugging)
+	- 10% - Running on EMR (Include testing and debugging)
